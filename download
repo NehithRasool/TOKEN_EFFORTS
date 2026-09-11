@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+.gen_ai_mortgage/
+gen_ai_mortgage_website/
+*.log
+.DS_Store

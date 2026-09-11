@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gen-ai-mortgage-loan-application
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:loan_web_app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
